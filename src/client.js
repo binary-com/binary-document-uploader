@@ -23,6 +23,7 @@ export default class Client {
             pageType: page_type,
             buffer,
             proof_of_ownership,
+            documentIssuingCountry: document_issuing_country,
         } = this.file;
         const passthrough = Object.assign(this.file.passthrough || {}, {document_upload: true});
         const request = {
@@ -44,6 +45,9 @@ export default class Client {
         }
         if (proof_of_ownership) {
             request.proof_of_ownership = proof_of_ownership;
+        }
+        if (document_issuing_country) {
+            request.document_issuing_country = document_issuing_country;
         }
         this.send(
             JSON.stringify(request)

@@ -56,7 +56,7 @@
     "eslint-config-binary": "^1.0.2",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-import": "^2.7.0",
-    "jest": "^25.2.7",
+    "jest": "^29.6.1",
     "lint-staged": "^4.0.3",
     "prettier-eslint-cli": "^5.0.0",
     "webpack": "^3.5.5",

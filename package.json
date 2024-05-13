@@ -63,6 +63,8 @@
     "ws": "^6.1.4"
   },
   "dependencies": {
+    "@babel/traverse": "^7.24.5",
+    "@binary-com/binary-document-uploader": "^2.4.8",
     "md5": "^2.2.1"
   }
 }

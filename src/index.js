@@ -1,4 +1,4 @@
-import 'babel-polyfill'; // eslint-disable-line import/extensions,import/no-unresolved
+import 'core-js/stable';
 import { log, checkOptions, getFile, createError } from './tools';
 import Client from './client';
 

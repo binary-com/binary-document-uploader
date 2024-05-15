@@ -20,14 +20,14 @@
   "babel": {
     "presets": [
       [
-        "env",
+        "@babel/preset-env",
         {
           "targets": {
             "browsers": [
               "> 1%"
             ]
           },
-          "useBuiltIns": true
+          "useBuiltIns": "entry"
         }
       ]
     ],
@@ -44,12 +44,14 @@
   "author": "Amin Marashi <marashisamin at gmail>",
   "license": "ISC",
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
-    "babel-jest": "^24.1.0",
-    "babel-loader": "^7.1.2",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0",
     "babel-minify-webpack-plugin": "^0.2.0",
     "babel-plugin-loop-optimizer": "^1.4.1",
-    "babel-preset-env": "^1.6.0",
     "base64-js": "^1.2.1",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^11.3.2",
@@ -63,6 +65,7 @@
     "ws": "^6.1.4"
   },
   "dependencies": {
+    "core-js": "^3.37.1",
     "md5": "^2.2.1"
   }
 }

@@ -66,6 +66,8 @@
   },
   "dependencies": {
     "core-js": "^3.37.1",
+    "json5": "^2.2.3",
+    "loader-utils": "^1.4.1",
     "md5": "^2.2.1",
     "minimist": "^1.2.6"
   }

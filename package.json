@@ -65,8 +65,9 @@
     "ws": "^6.1.4"
   },
   "dependencies": {
+    "ansi-regex": "^5.0.1",
     "core-js": "^3.37.1",
-    "json5": "^2.2.3",
+    "json5": "^1.0.2",
     "loader-utils": "^1.4.1",
     "md5": "^2.2.1",
     "minimist": "^1.2.6"

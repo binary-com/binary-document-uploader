@@ -44,8 +44,10 @@
   "author": "Amin Marashi <marashisamin at gmail>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.24.5",
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
+    "@babel/traverse": "^7.24.5",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^29.7.0",
     "babel-loader": "^8.0.0",
@@ -66,7 +68,6 @@
   "dependencies": {
     "@binary-com/binary-document-uploader": "^2.4.8",
     "ansi-regex": "^5.0.1",
-    "babel-traverse": "^6.26.0",
     "core-js": "^3.37.1",
     "json5": "^1.0.2",
     "loader-utils": "^1.4.1",

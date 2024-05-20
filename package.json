@@ -47,7 +47,7 @@
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
     "babel-eslint": "^9.0.0",
-    "babel-jest": "^23.4.2",
+    "babel-jest": "^29.7.0",
     "babel-loader": "^8.0.0",
     "babel-minify-webpack-plugin": "^0.2.0",
     "babel-plugin-loop-optimizer": "^1.4.1",

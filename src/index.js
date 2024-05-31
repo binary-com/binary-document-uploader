@@ -10,6 +10,7 @@ export default class DocumentUploader {
         this.clients = {};
         this.wrapConnection();
     }
+	
     upload(fileOptions) {
         const { debug = false } = this.config;
 
@@ -28,6 +29,7 @@ export default class DocumentUploader {
             client.requestUpload();
         });
     }
+
     wrapConnection() {
         const { connection, debug = false } = this.config;
 

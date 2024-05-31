@@ -4,42 +4,42 @@
 	"description": "Upload files to binary.com platform",
 	"main": "DocumentUploader.js",
 	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/binary-com/binary-document-uploader.git"
+	  "type": "git",
+	  "url": "git+ssh://git@github.com/binary-com/binary-document-uploader.git"
 	},
 	"homepage": "https://github.com/binary-com/binary-document-uploader/blob/master/README.md",
 	"keywords": [
-		"binary.com"
+	  "binary.com"
 	],
 	"scripts": {
-		"test": "eslint src && jest --forceExit",
-		"build": "webpack",
-		"prepublishOnly": "npm run build",
-		"precommit": "lint-staged"
+	  "test": "eslint src && jest --forceExit",
+	  "build": "webpack",
+	  "prepublishOnly": "npm run build",
+	  "precommit": "lint-staged"
 	},
 	"babel": {
-		"presets": [
-			[
-				"@babel/preset-env",
-				{
-					"targets": {
-						"browsers": [
-							"> 1%"
-						]
-					},
-					"useBuiltIns": "entry"
-				}
-			]
-		],
-		"plugins": [
-			"babel-plugin-loop-optimizer"
+	  "presets": [
+		[
+		  "@babel/preset-env",
+		  {
+			"targets": {
+			  "browsers": [
+				"> 1%"
+			  ]
+			},
+			"useBuiltIns": "entry"
+		  }
 		]
+	  ],
+	  "plugins": [
+		"babel-plugin-loop-optimizer"
+	  ]
 	},
 	"lint-staged": {
-		"*.js": [
-			"prettier-eslint --write",
-			"git add"
-		]
+	  "*.js": [
+		"prettier-eslint --write",
+		"git add"
+	  ]
 	},
 	"author": "Amin Marashi <marashisamin at gmail>",
 	"license": "ISC",

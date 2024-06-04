@@ -39,7 +39,7 @@ export default class DocumentUploader {
 
         this.connection = connection;
 
-        this.send = (payload) => {
+        this.send = payload => {
             log(debug, '<Sent>:', payload);
             connection.send(payload);
         };

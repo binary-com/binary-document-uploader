@@ -60,7 +60,7 @@ export default class DocumentUploader {
                 originalOnMessage.call(connection, response);
                 return;
             }
-            
+
             if (!(json.req_id in this.clients)) {
                 return;
             }

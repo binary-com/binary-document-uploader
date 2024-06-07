@@ -60,12 +60,16 @@ export default class DocumentUploader {
                 originalOnMessage.call(connection, response);
                 return;
             }
+            
             if (!(json.req_id in this.clients)) {
                 return;
             }
+
             const { client, promise } = this.clients[json.req_id];
+
             try {
                 const result = client.handleMessage(json);
+
                 if (result) {
                     log(debug, 'Upload successful, upload info:', result);
                     promise.resolve(result);

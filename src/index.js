@@ -1,6 +1,7 @@
 import 'core-js/stable';
 import { log, checkOptions, getFile, createError } from './tools';
 import Client from './client';
+
 let reqId = 0;
 export default class DocumentUploader {
     constructor(config) {
@@ -18,7 +19,7 @@ export default class DocumentUploader {
         return new Promise((resolve, reject) => {
             this.clients[reqId].promise = { resolve, reject };
             log(debug, 'Uploading started, File options:', file);
-			client.requestUpload();
+            client.requestUpload();
         });
     }
     wrapConnection() {
@@ -27,20 +28,25 @@ export default class DocumentUploader {
             throw createError('ConnectionError', 'Connection is not ready!');
         }
         this.connection = connection;
-        this.send = payload => {
+        this.send = (payload) => {
             log(debug, '<Sent>:', payload);
             connection.send(payload);
         };
         const originalOnMessage = connection.onmessage;
-        connection.onmessage = response => {
+        connection.onmessage = (response) => {
             const { data } = response;
             log(debug, '<Received>:', data);
             const json = JSON.parse(data);
-            if (originalOnMessage && (!json.passthrough || !json.passthrough.document_upload)) {
+            if (
+                originalOnMessage &&
+        (!json.passthrough || !json.passthrough.document_upload)
+            ) {
                 originalOnMessage.call(connection, response);
                 return;
             }
-            const { passthrough: { document_upload: isDocumentUpload } } = json;
+            const {
+                passthrough: { document_upload: isDocumentUpload },
+            } = json;
             if (originalOnMessage && !isDocumentUpload) {
                 originalOnMessage.call(connection, response);
                 return;

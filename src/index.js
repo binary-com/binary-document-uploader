@@ -1,4 +1,4 @@
-import 'core-js/stable';
+import "core-js/stable';
 import { log, checkOptions, getFile, createError } from './tools';
 import Client from './client';
 

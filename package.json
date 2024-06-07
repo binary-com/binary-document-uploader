@@ -1,80 +1,79 @@
 {
- "name": "@binary-com/binary-document-uploader",
- "version": "2.4.8",
- "description": "Upload files to binary.com platform",
- "main": "DocumentUploader.js",
- "repository": {
-  "type": "git",
-  "url": "git+ssh://git@github.com/binary-com/binary-document-uploader.git"
- },
- "homepage": "https://github.com/binary-com/binary-document-uploader/blob/master/README.md",
- "keywords": [
-  "binary.com"
- ],
- "scripts": {
-  "test": "eslint src && jest --forceExit",
-  "build": "webpack",
-  "prepublishOnly": "npm run build",
-  "precommit": "lint-staged"
- },
- "babel": {
-  "presets": [
-   [
-    "@babel/preset-env",
-    {
-     "targets": {
-      "browsers": [
-       "> 1%"
-      ]
-     },
-     "useBuiltIns": "entry"
-    }
-   ]
+  "name": "@binary-com/binary-document-uploader",
+  "version": "2.4.8",
+  "description": "Upload files to binary.com platform",
+  "main": "DocumentUploader.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/binary-com/binary-document-uploader.git"
+  },
+  "homepage": "https://github.com/binary-com/binary-document-uploader/blob/master/README.md",
+  "keywords": [
+    "binary.com"
   ],
-  "plugins": [
-   "babel-plugin-loop-optimizer"
-  ]
- },
- "lint-staged": {
-  "*.js": [
-   "prettier-eslint --write",
-   "git add"
-  ]
- },
- "author": "Amin Marashi <marashisamin at gmail>",
- "license": "ISC",
- "devDependencies": {
-  "@babel/cli": "^7.24.5",
-  "@babel/core": "^7.24.5",
-  "@babel/preset-env": "^7.24.5",
-  "@babel/traverse": "^7.24.5",
-  "babel-eslint": "^10.1.0",
-  "babel-jest": "^29.7.0",
-  "babel-loader": "^8.0.0",
-  "babel-minify-webpack-plugin": "^0.2.0",
-  "babel-plugin-loop-optimizer": "^1.4.1",
-  "base64-js": "^1.2.1",
-  "eslint": "^7.32.0",
-  "eslint-config-airbnb-base": "^11.3.2",
-  "eslint-config-binary": "^1.0.2",
-  "eslint-config-prettier": "^2.3.0",
-  "eslint-plugin-import": "^2.7.0",
-  "jest": "^29.7.0",
-  "lint-staged": "^4.0.3",
-  "prettier-eslint-cli": "^5.0.0",
-  "terser-webpack-plugin": "^5.3.10",
-  "webpack": "^5.91.0",
-  "webpack-cli": "^5.1.4",
-  "ws": "^6.1.4"
- },
- "dependencies": {
-  "@binary-com/binary-document-uploader": "^2.4.8",
-  "ansi-regex": "^5.0.1",
-  "core-js": "^3.37.1",
-  "json5": "^2.2.2",
-  "loader-utils": "^1.4.1",
-  "md5": "^2.2.1",
-  "minimist": "^1.2.6"
- }
-
+  "scripts": {
+    "test": "eslint src && jest --forceExit",
+    "build": "webpack",
+    "prepublishOnly": "npm run build",
+    "precommit": "lint-staged"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "> 1%"
+            ]
+          },
+          "useBuiltIns": "entry"
+        }
+      ]
+    ],
+    "plugins": [
+      "babel-plugin-loop-optimizer"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write",
+      "git add"
+    ]
+  },
+  "author": "Amin Marashi <marashisamin at gmail>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/traverse": "^7.24.5",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^8.0.0",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-plugin-loop-optimizer": "^1.4.1",
+    "base64-js": "^1.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-config-binary": "^1.0.2",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^29.7.0",
+    "lint-staged": "^4.0.3",
+    "prettier-eslint-cli": "^5.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "ws": "^6.1.4"
+  },
+  "dependencies": {
+    "@binary-com/binary-document-uploader": "^2.4.8",
+    "ansi-regex": "^5.0.1",
+    "core-js": "^3.37.1",
+    "json5": "^2.2.2",
+    "loader-utils": "^1.4.1",
+    "md5": "^2.2.1",
+    "minimist": "^1.2.6"
+  }
 }

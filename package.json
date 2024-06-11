@@ -51,7 +51,6 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^29.7.0",
     "babel-loader": "^8.0.0",
-    "babel-minify-webpack-plugin": "^0.2.0",
     "babel-plugin-loop-optimizer": "^1.4.1",
     "base64-js": "^1.2.1",
     "eslint": "^7.32.0",
